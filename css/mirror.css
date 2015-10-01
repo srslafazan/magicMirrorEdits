@@ -1,0 +1,72 @@
+#top_features{
+	margin-top: 0px;
+}
+#top_features img{
+	vertical-align: top;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+#time,#weather,#temp{
+	display: inline-block;
+}
+#left_corner{
+	display: inline-block;
+}
+#time{
+	margin-top: 20px;
+}
+#time h1{
+	font-size: 100px;
+}
+#date{
+	margin-left: 79px;
+}
+#weather{
+	margin-left: 320px;
+}
+#temp_num{
+	margin-top: 5px;
+	margin-left: 0px;
+}
+#tomorrow{
+	width: 340px;
+	margin-left: 740px;
+}
+#tomorrow i{
+	position: absolute;
+	margin-left: 245px;
+	margin-top: -47px;
+}
+#sun_alert{
+	padding-left: 72px;
+}
+#main_icon{
+	margin-top: 50px;
+}
+#bottom_features{
+	margin-top: 1300px;
+}
+#health{
+	margin-left: 0px;
+	width: 400px;
+	display: inline-block;
+}
+#directions{
+	margin-left: 0px;
+	width: 400px;
+	display: inline-block;
+	margin-left: 250px;
+}
+#bottom{
+	margin-top: 700px;
+}
+#bottom h1{
+	font-size: 80px;
+}
+#bottom h2{
+	font-size: 60px;
+}
+#bottom h3{
+	font-size: 40px;
+}

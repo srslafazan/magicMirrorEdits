@@ -1,0 +1,79 @@
+<div id="mirror">
+	<div id="top_features">
+		<div id="left_corner">
+			<div id="time">
+				<h1><span my-current-time="format"></span>
+	      		<div>{{propiedadPrueba}}</div></h1>
+			</div>
+			<div id="date">
+				<h1 ng-bind="dateFormatted"></h1>
+			</div>
+		</div>
+		<div id="weather">
+			<center><i id="main_icon" class="{{icon_name}}"></i></center><br>
+			<h1 ng-bind="weather.current.condition.text"></h1>
+		</div>
+		<img id="bar" src="img/bar.png" alt="bar pic" height=200>
+		<div id="temp">
+			<i class="wi wi-thermometer"></i>
+			<h1 id="temp_num" ng-bind="weather.current.feelslike_f"></h1>
+		</div>
+		<div id="tomorrow">
+			<h2>Tomorrow will be <span ng-bind="weather.forecast.forecastday[1].day.condition.text"></span>. Expect around <span ng-bind="tomorrow_temp_f"></span></h2>
+			<i class="wi wi-fahrenheit"></i>
+			<div id="sun_alert_div"></div>
+		</div>
+	</div>
+
+
+
+	<style type='text/css'>
+	 	#display-houses {
+	 		text-align: center;
+	 		margin: 1rem 0 0 0;
+	 	}
+
+	 	.house {
+	 		display: inline-block;
+	 		vertical-align: top;
+	 		margin: 1rem 5rem;
+	 	}
+
+	 	li {
+	 		list-style: none;
+	 		font-size: 2em;
+	 	}
+	 	ul {
+	 		padding: 0 !important;
+	 		margin: 0 auto;
+	 	}
+
+
+	</style>
+
+	<div id='display-houses'>
+	
+		<h1>Coding Dojo Houses</h1>
+		
+		<div id='house1' class='house'>
+			<h2>{{currentlyDisplayedHouseName1}}</h2>
+			<ul>
+				<li ng-repeat='houseMember in currentlyDisplayedMembers1'>{{houseMember}}</li>
+			</ul>
+
+		</div>
+
+		<div id='house2' class='house'>
+			<h2>{{currentlyDisplayedHouseName2}}</h2>
+			<ul>
+				<li ng-repeat='houseMember in currentlyDisplayedMembers2'>{{houseMember}}</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<center>
+		<div id="bottom"></div>
+	</center>
+</div>
